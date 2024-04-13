@@ -1,0 +1,324 @@
+/*imports*/
+body{
+  margin: 0;
+  padding: 0;
+}
+/*Desing page */
+.container {
+  margin-top: 8px;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.brand-name {
+  margin-left: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  width: auto;
+  color: #234160;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #234160;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.body {
+  margin: 0;
+}
+
+.containers {
+  height: 550px;
+  background: #0f9bf6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  z-index: 2;
+  width: 50%;
+  text-align: left;
+  color: #ffffffcc;
+}
+
+.content p {
+  color: #141212;
+
+  font-size: 19px;
+}
+
+.waves {
+  position: absolute;
+  /*      left: 0;
+    right: 0;
+    height: 200px;
+    bottom: 0;*/
+  bottom: -50px;
+  height: 527px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  left: -160px;
+  bottom: 0;
+  width: 2402px;
+  height: 427px;
+  background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+  animation: 5s wave ease-in-out infinite alternate;
+}
+
+.wave.a {
+  background-position: 0 -854px;
+}
+
+.wave.b {
+  background-position: 0 -427px;
+  animation-delay: .6s;
+}
+
+.wave.c {
+  background-position: 0 0;
+  animation-delay: 1.2s;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-80px, 30px);
+  }
+
+  100% {
+    transform: translate(160px, -60px);
+  }
+}
+
+
+.imgcontent {
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 52%;
+  right: 9.9%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.button-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #234160;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 30px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container a:hover {
+  background-color: #445f7d;
+}
+
+.button-container a img {
+  width: 65px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.button-container a span {
+  color: #f8f9fa;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  font-size: 18px;
+  flex: 1;
+  text-align: center;
+}
+
+/*Empresas Desing*/
+.Empresas {
+  background-color: #f2f2f2;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.205);
+  padding: 20px;
+}
+
+.empresas-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empresa {
+  width: 110px;
+  animation: floatAnimation 3s infinite ease-in-out alternate;
+  /* Animación de flotar */
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.empresa img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .empresas-container {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .empresa {
+    margin: 10px 0;
+  }
+}
+
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; 
+}
+
+#whatsapp-icon .img {
+  width: 60px; 
+  height: auto;
+}
+#whatsapp-icon .img:hover {
+  width: 60px; 
+  height: auto;
+  animation: floatW 2s infinite ease-in-out alternate;
+}
+@keyframes floatW {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/*Ubication desing*/
+
+/*BoxSection desing
+.boxSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+  margin: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  color: #234160;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+}*/
